@@ -5,6 +5,8 @@
 #include "Scene.h"
 #include "Label.h"
 #include "RollButton.h"
+#include "Dice.h"
+#include "Dice2.h"
 
 class Level1Scene : public Scene
 {
@@ -24,6 +26,11 @@ public:
 private:
 	// game objects
 	RollButton* m_pRollButton;
+	Label* m_pDiceOneLabel;
+	Label* m_pDiceTwoLabel;
+	Dice* m_pDice1;
+	Dice2* m_pDice2;
+	
 
 
 	// private data member

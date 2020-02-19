@@ -1,5 +1,8 @@
 #include "RollButton.h"
 #include "Game.h"
+#include "Util.h"
+#include "Dice.h"
+#include "Dice2.h"
 
 RollButton::RollButton()
 	//Called Super Constructor
@@ -22,8 +25,18 @@ bool RollButton::ButtonClick()
 	{
 		if (!m_isClicked)
 		{
-			Game::Instance()->changeSceneState(LEVEL1_SCENE);
+			int Dice1 = 0;
+			int Dice2 = 0;
+
+			Dice1 = Util::RandomRange(1, 6);
+			Dice2 = Util::RandomRange(1, 6);
+
+			std::cout << Dice1 << std::endl;
+			std::cout << Dice2 << std::endl;
+
+			
 			m_isClicked = true;
+
 		}
 		return true;
 	}
