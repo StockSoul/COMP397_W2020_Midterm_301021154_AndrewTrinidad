@@ -3,6 +3,15 @@
 #define __DICE2__
 #include "DisplayObject.h"
 
+/*
+ * Dice2.cpp
+ * Andrew Trinidad
+ * February 18, 2020
+ * Dice thingy
+ * Current changes: (In order)
+ * -Added Dice
+ */
+
 class Dice2 : public DisplayObject
 {
 public:

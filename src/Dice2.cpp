@@ -1,45 +1,54 @@
 #include "Dice2.h"
 #include "Game.h"
 
-Dice2::Dice2(int num)
+/*
+ * Dice2.cpp
+ * Andrew Trinidad
+ * February 18, 2020
+ * Dice thingy
+ * Current changes: (In order)
+ * -Added Dice2
+ */
+
+Dice2::Dice2(int roll)
 {
-	if (num == 0)
+	if (roll == 0)
 	{
 		TheTextureManager::Instance()->load("../Assets/textures/blank.png",
 			"Dice2", TheGame::Instance()->getRenderer());
 	}
 
-	if (num == 1)
+	if (roll == 1)
 	{
 		TheTextureManager::Instance()->load("../Assets/textures/1.png",
 			"Dice2", TheGame::Instance()->getRenderer());
 	}
 
-	if (num == 2)
+	if (roll == 2)
 	{
 		TheTextureManager::Instance()->load("../Assets/textures/2.png",
 			"Dice2", TheGame::Instance()->getRenderer());
 	}
 
-	if (num == 3)
+	if (roll == 3)
 	{
 		TheTextureManager::Instance()->load("../Assets/textures/3.png",
 			"Dice2", TheGame::Instance()->getRenderer());
 	}
 
-	if (num == 4)
+	if (roll == 4)
 	{
 		TheTextureManager::Instance()->load("../Assets/textures/4.png",
 			"Dice2", TheGame::Instance()->getRenderer());
 	}
 
-	if (num == 5)
+	if (roll == 5)
 	{
 		TheTextureManager::Instance()->load("../Assets/textures/5.png",
 			"Dice2", TheGame::Instance()->getRenderer());
 	}
 
-	if (num == 6)
+	if (roll == 6)
 	{
 		TheTextureManager::Instance()->load("../Assets/textures/6.png",
 			"Dice2", TheGame::Instance()->getRenderer());

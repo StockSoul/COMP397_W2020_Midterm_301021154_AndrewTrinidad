@@ -1,8 +1,16 @@
 #include "RollButton.h"
 #include "Game.h"
 #include "Util.h"
-#include "Dice.h"
-#include "Dice2.h"
+
+/*
+ * RollButton.cpp
+ * Andrew Trinidad
+ * February 18, 2020
+ * Dice thingy
+ * Current changes: (In order)
+ * -Added Roll Button
+ * -Button Roll on click
+ */
 
 RollButton::RollButton()
 	//Called Super Constructor
@@ -11,7 +19,7 @@ RollButton::RollButton()
 		"startButton",
 		ROLL_BUTTON, glm::vec2(400.0f, 300.0f)), m_isClicked(false)
 {
-		
+	TheSoundManager::Instance()->load("../Assets/audio/nut.mp3", "nut", SOUND_SFX);
 }
 
 
@@ -34,6 +42,10 @@ bool RollButton::ButtonClick()
 			std::cout << Dice1 << std::endl;
 			std::cout << Dice2 << std::endl;
 
+			Die1 = Dice1;
+			Die2 = Dice2;
+
+			TheSoundManager::Instance()->playSound("nut", 0);
 			
 			m_isClicked = true;
 

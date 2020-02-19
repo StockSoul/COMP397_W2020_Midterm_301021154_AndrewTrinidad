@@ -10,6 +10,7 @@
  * Current changes: (In order)
  * -Added Roll Button
  * -Added Labels
+ * -Added Update Function
  */
 
 Level1Scene::Level1Scene()
@@ -35,9 +36,9 @@ void Level1Scene::update()
 	m_pRollButton->setMousePosition(m_mousePosition);
 	m_pRollButton->ButtonClick();
 
-	m_pDiceOneLabel->update();
-	m_pDiceTwoLabel->update();
-
+	m_pDiceOneLabel->setText(std::to_string(m_pRollButton->Die1));
+	m_pDiceTwoLabel->setText(std::to_string(m_pRollButton->Die2));
+	
 }
 
 void Level1Scene::clean()

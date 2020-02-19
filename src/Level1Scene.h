@@ -2,6 +2,16 @@
 #ifndef __LEVEL_1_SCENE__
 #define __LEVEL_1_SCENE__
 
+/*
+ * Level1Scene.h
+ * Andrew Trinidad
+ * February 18, 2020
+ * Dice thingy
+ * Current changes: (In order)
+ * -Added Roll Button
+ * -Added Labels
+ */
+
 #include "Scene.h"
 #include "Label.h"
 #include "RollButton.h"
